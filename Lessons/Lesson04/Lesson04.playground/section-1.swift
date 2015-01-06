@@ -5,11 +5,75 @@
 
 // TODO: Write a function that prints out "Hello world!" 10 times
 
+let name = "stephanie"
+
+func helloWorld() {
+    println(name)
+    
+}
+
+helloWorld()
+    helloWorld()
+    helloWorld()
+    helloWorld()
+    helloWorld()
+    helloWorld()
+    helloWorld()
+    helloWorld()
+
 // TODO: Write a function that prints out "Hit this line {number of iterations of the loop} times!" 20 times
+    
+func Hitthisline() {
+    println(" hit this line")
+    
+}
+
+for index in 0...19 {
+    println (helloWorld)
+
+    println("String")
+    
+}
+
 
 // TODO: Write a function that accepts a string as a parameter. Print "Hello {value of string}!"
 
-// TODO: Write a function accepts a string optional. If the string optional exists, print "Hello {value of string}!". If it doesn't, print "Hello world!"
+    //var name = "Stephanie"
+    func HelloWorldToName(name: String) {
+        println("Hello \(name)")
+}
+
+HelloWorldToName("Stephanie")
+
+// TODO: Write a function accepts a string optional. If the string optional exists, print "Hello {value of string}!". If it doesn't, print "Hello world!
+
+func stringOptional(name: String?) {
+    if let realName = name {
+        var string = "Hello \(realName)"
+        println(string)
+    } else {
+        println("helloWorld!")
+    }
+}
+
+stringOptional("coop")
+
+stringOptional(nil)
+
+
+//helloWorldtoTwoPeople("Sean", "travis")
+//
+//    func formattedHelloWorldTextToName(name:String) -> String {
+//        return "Hello \ (name), have a great class!"
+//}
+//
+//println(formattedHelloWorldTextToName("Rudd") + "Woohoo!")
+//
+//    func lengthOfNames(nameOne: String, nameTwo: String) ->
+//        (String, String) {
+//        return (countElements(nameOne), countElements(nameTwo))
+//}
+//println(lengthOfNames("Rudd","Travis"))
 
 // TODO: Write a function that takes one parameter, n, and returns an integer, the nth series in the fibonacci
 // sequence. The first fibonacci number is 0, the second is 1, the third is 1, the fourth is 2, fifth is 3, sixth is 5, etc. fibonacci numbers at sequence n are the sum of the n-1 and n-2 fibonacci number.
